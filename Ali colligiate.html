@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Collegiate – Bufferzone Branch | Admissions 2026-27</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--blue:#1f73e0;--gold:#f5a623;--teal:#19c6c6;--text:#e9eef7;--muted:#9aa7bb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+#bg{position:fixed;inset:0;z-index:0}
+main{position:relative;z-index:1}
+section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:80px 6vw;text-align:center}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px 6vw;background:rgba(0,0,0,.55);backdrop-filter:blur(8px)}
+nav b{font-family:'Oswald',Impact,sans-serif;font-size:1.3rem;color:var(--blue);letter-spacing:1px}
+nav a{color:var(--text);text-decoration:none;margin-left:22px;font-size:.9rem}
+nav a:hover{color:var(--gold)}
+h1{font-family:'Oswald',Impact,sans-serif;font-size:clamp(3rem,11vw,8rem);line-height:1;background:linear-gradient(180deg,#3d8cff,#1558b8);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 8px 24px rgba(31,115,224,.45))}
+.branch{font-family:'Oswald',sans-serif;color:var(--gold);font-size:clamp(1.2rem,3.5vw,2rem);letter-spacing:.15em;margin-top:10px;display:flex;align-items:center;gap:16px}
+.branch:before,.branch:after{content:"";width:8vw;height:2px;background:var(--gold)}
+.classes{letter-spacing:.35em;font-weight:600;margin:12px 0 26px}
+.sup{color:var(--muted);margin-top:30px}
+.name{font-family:'Oswald',sans-serif;font-size:clamp(1.8rem,6vw,3.6rem);color:var(--teal)}
+.badge{margin-top:36px;border:2px solid var(--gold);border-radius:18px;padding:16px 28px;background:rgba(245,166,35,.08);transform-style:preserve-3d;transition:transform .15s}
+.badge h2{font-family:'Oswald',sans-serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold)}
+.badge p b{color:var(--gold)}
+.btn{display:inline-block;margin-top:28px;padding:14px 34px;border-radius:40px;background:var(--gold);color:#111;font-weight:600;text-decoration:none;box-shadow:0 10px 0 #a66d0a,0 18px 30px rgba(0,0,0,.6);transition:.15s}
+.btn:active{transform:translateY(6px);box-shadow:0 4px 0 #a66d0a}
+h3{font-family:'Oswald',sans-serif;font-size:clamp(2rem,5vw,3rem);margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;width:min(1000px,100%);perspective:900px}
+.card{background:linear-gradient(145deg,#0f1c33,#08101f);border:1px solid rgba(31,115,224,.5);border-radius:18px;padding:34px 20px;transform-style:preserve-3d;transition:transform .12s;box-shadow:0 20px 40px rgba(0,0,0,.6)}
+.card strong{display:block;font-family:'Oswald',sans-serif;font-size:3.2rem;color:var(--blue);transform:translateZ(40px)}
+.card span{color:var(--muted);transform:translateZ(20px);display:block}
+.time{font-family:'Oswald',sans-serif;font-size:clamp(2.2rem,8vw,5rem);color:var(--teal)}
+form{display:grid;gap:14px;width:min(460px,100%);margin-top:10px}
+input,select{padding:14px 16px;border-radius:12px;border:1px solid #27406b;background:#0a1324;color:var(--text);font:inherit}
+input:focus,select:focus,.btn:focus-visible{outline:2px solid var(--gold)}
+button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
+#msg{margin-top:14px;color:var(--teal);min-height:1.5em}
+footer{position:relative;z-index:1;text-align:center;padding:26px;color:var(--muted);font-size:.85rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<nav><b>ALI COLLEGIATE</b><div><a href="#home">Home</a><a href="#classes">Classes</a><a href="#timings">Timings</a><a href="#apply">Apply</a></div></nav>
+<main>
+<section id="home">
+  <div style="height:38vh"></div>
+  <h1>ALI COLLEGIATE</h1>
+  <div class="branch">BUFFERZONE BRANCH</div>
+  <div class="classes">IX – X – XI – XII</div>
+  <p class="sup">Under the supervision of</p>
+  <p class="name">SIR ABDUL MOIZ KHAN</p>
+  <div class="badge" id="badge">
+    <h2>ADMISSIONS OPEN</h2>
+    <p>For the new session <b>2026-27</b></p>
+  </div>
+  <a class="btn" href="#apply">Apply for admission</a>
+</section>
+
+<section id="classes">
+  <h3>Classes we teach</h3>
+  <div class="grid">
+    <div class="card"><strong>IX</strong><span>Matric foundation</span></div>
+    <div class="card"><strong>X</strong><span>Matric board preparation</span></div>
+    <div class="card"><strong>XI</strong><span>Intermediate part one</span></div>
+    <div class="card"><strong>XII</strong><span>Intermediate part two</span></div>
+  </div>
+</section>
+
+<section id="timings">
+  <h3>Timings</h3>
+  <p class="time">03:00 pm – 10:00 pm</p>
+  <p class="sup">Admissions are open for the 2026-27 session.</p>
+</section>
+
+<section id="apply">
+  <h3>Request admission</h3>
+  <form id="f">
+    <input required placeholder="Student name" aria-label="Student name">
+    <select required aria-label="Class"><option value="">Select class</option><option>IX</option><option>X</option><option>XI</option><option>XII</option></select>
+    <input required type="tel" placeholder="Parent phone number" aria-label="Phone">
+    <button class="btn" type="submit">Send request</button>
+  </form>
+  <p id="msg" role="status"></p>
+</section>
+</main>
+<footer>© 2026 Ali Collegiate, Bufferzone Branch<br>Made by <b style="color:var(--gold)">Muhammad Burhan</b></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var canvas=document.getElementById('bg');
+  var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  var scene=new THREE.Scene();
+  var cam=new THREE.PerspectiveCamera(45,1,0.1,100);
+  cam.position.set(0,0,9);
+  scene.add(new THREE.AmbientLight(0xffffff,.55));
+  var dl=new THREE.DirectionalLight(0xffffff,1.1);dl.position.set(4,6,6);scene.add(dl);
+  var pl=new THREE.PointLight(0x19c6c6,1.2,30);pl.position.set(-5,-2,4);scene.add(pl);
+
+  var cap=new THREE.Group();
+  var blue=new THREE.MeshStandardMaterial({color:0x1f73e0,metalness:.3,roughness:.35});
+  var dark=new THREE.MeshStandardMaterial({color:0x164f9e,metalness:.2,roughness:.5});
+  var gold=new THREE.MeshStandardMaterial({color:0xf5a623,metalness:.6,roughness:.3});
+  var top=new THREE.Mesh(new THREE.BoxGeometry(3.2,.14,3.2),blue);top.rotation.y=Math.PI/4;cap.add(top);
+  var base=new THREE.Mesh(new THREE.CylinderGeometry(.95,1.1,.8,32),dark);base.position.y=-.5;cap.add(base);
+  var cord=new THREE.Mesh(new THREE.CylinderGeometry(.02,.02,1.3,8),gold);cord.position.set(1.6,-.55,0);cap.add(cord);
+  var tas=new THREE.Mesh(new THREE.SphereGeometry(.1,16,16),gold);tas.position.set(1.6,-1.25,0);cap.add(tas);
+  var button=new THREE.Mesh(new THREE.SphereGeometry(.09,16,16),gold);button.position.y=.12;cap.add(button);
+  // open book
+  function page(side,mat){var m=new THREE.Mesh(new THREE.BoxGeometry(2.4,.06,1.7),mat);m.position.set(side*1.15,-1.6,0);m.rotation.z=side*-.25;return m;}
+  cap.add(page(-1,gold));cap.add(page(1,blue));
+  cap.position.set(0,1.2,0);cap.scale.setScalar(.9);
+  scene.add(cap);
+
+  // particles (stars)
+  var N=500,pos=new Float32Array(N*3);
+  for(var i=0;i<N*3;i++)pos[i]=(Math.random()-.5)*40;
+  var g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+  var pts=new THREE.Points(g,new THREE.PointsMaterial({color:0x5aa4ff,size:.06}));
+  scene.add(pts);
+
+  // floating letters cubes
+  var floaters=[];
+  ['IX','X','XI','XII'].forEach(function(t,i){
+    var c=document.createElement('canvas');c.width=c.height=128;var x=c.getContext('2d');
+    x.fillStyle='#0f1c33';x.fillRect(0,0,128,128);x.strokeStyle='#f5a623';x.lineWidth=6;x.strokeRect(4,4,120,120);
+    x.fillStyle='#f5a623';x.font='bold 56px sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText(t,64,68);
+    var m=new THREE.Mesh(new THREE.BoxGeometry(.9,.9,.9),new THREE.MeshStandardMaterial({map:new THREE.CanvasTexture(c)}));
+    m.position.set(-6+i*4,-3.2+(i%2)*.8,-2);m.userData.p=i;scene.add(m);floaters.push(m);
+  });
+
+  var mx=0,my=0,scrollY=0;
+  addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;});
+  addEventListener('scroll',function(){scrollY=window.scrollY/innerHeight;});
+  function resize(){renderer.setSize(innerWidth,innerHeight,false);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();}
+  addEventListener('resize',resize);resize();
+
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function loop(t){
+    t*=.001;
+    cap.rotation.y=(reduce?0:t*.5)+mx*1.2+scrollY*1.5;
+    cap.rotation.x=my*.5+.2;
+    cap.position.y=1.2+(reduce?0:Math.sin(t)*.15)-scrollY*1.2;
+    pts.rotation.y=t*.02;
+    floaters.forEach(function(f){f.rotation.x=t*.4+f.userData.p;f.rotation.y=t*.5;f.position.y+=Math.sin(t+f.userData.p)*.002;});
+    cam.position.x=mx*.8;cam.lookAt(0,0,0);
+    renderer.render(scene,cam);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+  // 3D tilt on cards and badge
+  document.querySelectorAll('.card,.badge').forEach(function(el){
+    el.addEventListener('mousemove',function(e){
+      var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+      el.style.transform='perspective(700px) rotateY('+x*22+'deg) rotateX('+-y*22+'deg)';
+    });
+    el.addEventListener('mouseleave',function(){el.style.transform='';});
+  });
+
+  document.getElementById('f').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('msg').textContent='Thank you! We will contact you about admission for 2026-27.';
+    e.target.reset();
+  });
+})();
+</script>
+</body>
+</html>
